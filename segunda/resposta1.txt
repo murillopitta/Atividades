@@ -1,0 +1,31 @@
+Exercício 1
+
+O encapsulamento é uma técnica para manter os métodos e atributos de uma classe oculto,
+deixando o acesso direto aos atributos restrito a outras classes e objetos. Podendo ser
+modificado apenas por métodos já estabelecidos.
+
+Exemplo:
+
+public class Funcionario {
+	private String nome;
+	private String sobrenome;
+	private double salario;
+	private int anoDeIngresso;
+	private int mesDeIngresso;
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
+}
+
+Nessa classe, seus atribudos estão protegidos diretamente, e é necessário usar seus métodos para manipula-los.
+
+
+
+
+
+Referência:
+https://www.devmedia.com.br/conceitos-encapsulamento-programacao-orientada-a-objetos/18702

@@ -1,0 +1,23 @@
+Exercício 2
+
+O encapsulamento em conjunto com métodos modificadores pode também promover o reuso dos cógidos, uma vez que podem ser utilizados em outros métodos para acessar os atributos de sua classe, podem ser usados também para criar novas instancias da mesma classe, possibilitando usar a classe várias vezes para diferentes propósitos.
+
+Exemplo:
+
+Funcionario jonas = new Funcionario();
+		
+		jonas.setNome("Jonas");
+		jonas.setSobrenome("da Silva");
+		jonas.setSalario(1500.00);
+		jonas.setAnoDeIngresso(2020);
+		jonas.setMesDeIngresso(2);
+
+	if (jonas.getSalario() < 1600.00) {
+		jonas.setSalario(jonas.getSalario() + 250.00);
+	}
+
+Nesse exemplo, se utiliza os métodos "set" e "get" para verificar e modificar os atributos da instancia "jonas", criada apartir da classe "Funcionario". Podendo reutilizar os métodos diversas vezes para ocasiões diferentes.
+
+
+Referência:
+https://www.devmedia.com.br/conceitos-encapsulamento-programacao-orientada-a-objetos/18702
